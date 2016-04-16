@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rsb="http://schemas.android.com/tools"
+
+    android:orientation="vertical"
+    android:id="@+id/selectId"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.RecyclerView
+    android:id="@+id/searchHorizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+    <TextView
+        android:background="#b1b3b6"
+        android:padding="10dp"
+        android:layout_below="@+id/searchHorizontal"
+        android:id="@+id/txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Brand"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/txt"
+        android:id="@+id/searchVertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+    <org.florescu.android.rangeseekbar.RangeSeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rangeBar"
+        rsb:absoluteMaxValue="100"
+        rsb:absoluteMinValue="0"
+        rsb:thumbShadow="true"
+        rsb:thumbShadowBlur="3dp"
+        android:layout_below="@+id/searchVertical"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:background="#e72023"
+        android:text="SEARCH"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:layout_below="@+id/rangeBar"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

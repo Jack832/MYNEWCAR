@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">MYNEWCAR</string>
+    <string name="action_settings">Settings</string>
+    <string name="open">Drawer Open</string>
+    <string name="close">Drawer Close</string>
+
+
+    <string-array name="locations">
+        <item>Mumbai</item>
+        <item>Pune</item>
+        <item>Thane</item>
+        <item>Goa</item>
+    </string-array>
+
+    <string-array name="fuelType">
+        <item>Select Fuel Type</item>
+        <item>CNG</item>
+        <item>petrol</item>
+        <item>LPG</item>
+        <item>Diesel</item>
+        <item>Electric</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

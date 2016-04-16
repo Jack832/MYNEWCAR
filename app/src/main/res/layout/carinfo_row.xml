@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:background="#ffff"
+    android:paddingRight="7dp"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/carIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/carone"/>
+     <TextView
+         android:id="@+id/carName"
+        android:text="Maruti suzuki"
+         android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_below="@+id/carIcon"
+         android:layout_toStartOf="@+id/exShowroom" />
+    <TextView
+       android:layout_below="@+id/carName"
+        android:text="Ex-showroom Price"
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/exShowroom"
+        android:text="500,159"
+        android:textColor="@color/textColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/carName"
+        android:layout_toEndOf="@+id/text" />
+    <TextView
+        android:text="Total Savings"
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:id="@+id/totalSaving"
+       android:text="36,997"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+        android:layout_below="@+id/exShowroom"
+        android:textColor="@color/textColor"
+        android:layout_alignEnd="@+id/exShowroom" />
+    <TextView
+        android:layout_below="@+id/totalSaving"
+        android:text="valid Until"
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+       <TextView
+       android:id="@+id/validUntil"
+       android:textColor="@color/textColor"
+       android:text="5April"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/totalSaving"
+       android:layout_alignEnd="@+id/totalSaving" />
+
+
+</RelativeLayout>

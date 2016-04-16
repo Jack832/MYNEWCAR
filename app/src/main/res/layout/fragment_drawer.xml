@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#a19e9c"
+    android:layout_height="match_parent"
+    tools:context="com.example.projectheena.mynewcar.view.DrawerFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="280dp"
+        android:background="#159"
+        android:id="@+id/linear"
+        android:layout_height="150dp">
+        <ImageView
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:src="@drawable/user"
+        android:id="@+id/NavImage"
+        android:scaleType="centerCrop"
+        android:text="@string/hello_blank_fragment"
+        android:layout_gravity="center_vertical"
+        android:layout_centerVertical="true"
+        />
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MUMBAI"
+        android:textColor="#fff"
+        android:paddingLeft="12dp"
+        android:id="@+id/location"
+        android:layout_below="@+id/NavImage"
+        android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/linear"
+        android:id="@+id/navigationList"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>
+
